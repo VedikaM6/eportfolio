@@ -1,0 +1,198 @@
+/* Custom CSS for vertical navbar */
+body {
+  padding-left: 200px;
+  /* Space for navbar */
+}
+
+.vertical-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 200px;
+  height: 100vh;
+  background: #f8f9fa;
+  padding-top: 20px;
+}
+
+.vertical-nav a {
+  color: #333;
+  padding: 10px 15px;
+  display: block;
+  text-decoration: none;
+}
+
+.vertical-nav a:hover {
+  background: #007bff;
+  color: white;
+}
+
+.content-area {
+  margin-left: 0px;
+  padding: 20px;
+}
+
+/* Experience page timeline css style */
+/* Container for the entire timeline */
+.timeline-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  position: relative;
+}
+
+/* Vertical line */
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: #ddd;
+}
+
+/* Common timeline item styling */
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px 40px;
+}
+
+/* Left-aligned items */
+.left-container {
+  left: 0;
+}
+
+.left-container::after {
+  content: '';
+  position: absolute;
+  right: -12px;
+  top: 30px;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px white;
+}
+
+/* Right-aligned items */
+.right-container {
+  left: 50%;
+}
+
+.right-container::after {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 30px;
+  width: 24px;
+  height: 24px;
+  background: white;
+  border: 2px solid #007bff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px white;
+}
+
+/* Content styling */
+.content-box {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-box h3 {
+  margin-top: 0;
+  color: #007bff;
+}
+
+.date {
+  color: #666;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Spacing between items */
+.timeline-item:nth-child(odd) {
+  margin-bottom: 20px;
+}
+
+.timeline-item:nth-child(even) {
+  margin-bottom: 20px;
+}
+
+/* Project page css style */
+
+.project-grid {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #007bff;
+  font-size: 2rem;
+}
+
+.project-item {
+  margin-bottom: 30px;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  height: 100%;
+  /* Ensures cards are uniform in height */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  height: 300px;
+  /* Increased height for better visuals */
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.card-title {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.card-text {
+  color: #666;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  /* Improves readability */
+  min-height: 120px;
+  /* Ensures consistent spacing for descriptions */
+}
+
+.tech-stack {
+  margin-bottom: 20px;
+}
+
+.tech-stack span {
+  background: #f8f9fa;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-right: 5px;
+  font-size: 0.9em;
+}
+
+.project-links .btn {
+  margin-right: 10px;
+  padding: 5px 15px;
+}
+
+.project-links .btn:last-child {
+  margin-right: 0;
+}

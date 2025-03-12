@@ -1,0 +1,112 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="project-grid">
+    <h2 class="section-title">Projects</h2>
+    
+    <div class="row">
+
+      <!-- Project 1 -->
+      <div class="col-md-6 project-item">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/project1.jpg') }}" 
+                 class="card-img-top" 
+                 alt="Project 1">
+            <div class="card-body">
+                <h5 class="card-title">E-Portfolio</h5>
+                <p class="card-text">
+                    Developed a responsive ePortfolio website that showcases my experience, projects and skills. 
+                    Designed a verticle timeline to outline my experience, grid-based project layout and responsiveness.
+                </p>
+                <div class="tech-stack">
+                    <span>Python</span>
+                    <span>Flask</span>
+                    <span>SQL</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/VedikaM6/eportfolio" class="btn btn-secondary btn-sm">Source Code</a>
+                </div>
+            </div>
+        </div>
+      </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-6 project-item">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/project1.jpg') }}" 
+                     class="card-img-top" 
+                     alt="Project 1">
+                <div class="card-body">
+                    <h5 class="card-title">Simulated Phishing Attacks</h5>
+                    <p class="card-text">
+                      Designed and developed a realistic phishing simulation platform using backend, database and web services, to test user awareness and identify individual employee weaknesses. 
+                      Senior employees can schedule phishing campaigns, customize email templates, and track engagement metrics, which includes a dashboard displaying real-time analytics on phishing attack results to help assess employee vulnerability.
+                    </p>
+                    <div class="tech-stack">
+                        <span>Go</span>
+                        <span>MongoDB</span>
+                        <span>PowerShell</span>
+                        <span>HTML/CSS</span>
+                        <span>Vue.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/VedikaM6/PhishingSimulation-Backend" class="btn btn-secondary btn-sm">Source Code - Backend</a>
+                        <a href="https://github.com/VedikaM6/PhishingSimulation-FrontEnd" class="btn btn-secondary btn-sm">Source Code - Frontend</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="col-md-6 project-item">
+          <div class="card">
+              <img src="{{ url_for('static', filename='images/project1.jpg') }}" 
+                   class="card-img-top" 
+                   alt="Project 1">
+              <div class="card-body">
+                  <h5 class="card-title">Network Reconnaissance and Security Analysis</h5>
+                  <p class="card-text">
+                    Conducted vulnerability scanning on multiple university servers using Python and Nmap to analyze security risks and network defenses by identifying open ports, misconfigurations, and potential attack vectors.
+                    Created a detailed report, summarizing risks, recommended solutions and security improvements for future implementation.                    
+                  </p>
+                  <div class="tech-stack">
+                      <span>Python</span>
+                      <span>Scapy</span>
+                      <span>Nmap</span>
+                  </div>
+                  <div class="project-links">
+                      <a href="https://github.com/VedikaM6/ScapyAssignment" class="btn btn-secondary btn-sm">Source Code</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+      <!-- Project 4 -->
+      <div class="col-md-6 project-item">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/project1.jpg') }}" 
+                 class="card-img-top" 
+                 alt="Project 1">
+            <div class="card-body">
+                <h5 class="card-title">Soil Moisture Sensor</h5>
+                <p class="card-text">
+                  Developed an IoT plant moisture sensor device that detects real-time moisture level of a plant and alerts users when the plant needs to be watered.
+                </p>
+                <div class="tech-stack">
+                    <span>C</span>
+                    <span>Arduino IDE</span>
+                    <span>ESP8266</span>
+                    <span>Kotlin</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" class="btn btn-secondary btn-sm">Source Code</a>
+                </div>
+            </div>
+        </div>
+      </div>
+
+        
+      </div>
+    </div>
+</div>
+{% endblock %}
