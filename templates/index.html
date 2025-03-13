@@ -1,16 +1,48 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-8 offset-md-2">
-            <h1 class="display-4">Vedika Maheshwari</h1>
-            <p class="lead">A passionate full stack developer with a passion for cybersecurity</p>
-            
-            <div class="mt-5">
+<div class="about-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Left Column: About Me + Skills & Tools -->
+            <div class="col-md-8 col-lg-6 about-left">
+                <h2>About Me</h2>
+                <p>
+                    about me info....
+                </p>
+
+                <h4>Skills & Tools</h4>
+                <div class="skills-tools">
+                    <h5>Languages</h5>
+                    <div class="skill-badge">HTML</div>
+                    <div class="skill-badge">CSS</div>
+                    <div class="skill-badge">JavaScript</div>
+                    <div class="skill-badge">Python</div>
+                    <div class="skill-badge">C#</div>
+
+                    <h5>Software, Tools and Applications</h5>
+                    <div class="skill-badge">Adobe Photoshop</div>
+                    <div class="skill-badge">Adobe Illustrator</div>
+                    <div class="skill-badge">Adobe XD</div>
+                    <div class="skill-badge">Figma</div>
+
+                </div>
+            </div>
+
+            <!-- Right Column: Profile Image + Social Links -->
+            <div class="col-md-8 col-lg-4 about-right text-center">
                 <img src="{{ url_for('static', filename='images/profile.jpg') }}" 
-                     class="img-fluid rounded-circle shadow" 
-                     style="max-width: 300px;">
+                     alt="Profile Picture" 
+                     class="profile-image rounded-circle shadow">
+
+                <div class="social-links mt-4">
+                    <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="btn btn-primary btn-block">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/your-username" target="_blank" class="btn btn-dark btn-block mt-2">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
             </div>
         </div>
     </div>
