@@ -31,6 +31,24 @@ body {
   padding: 20px;
 }
 
+/* Index page css styles */
+.about-section {
+  padding: 100px 20px;
+  background: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+}
+
+
 /* Experience page timeline css style */
 /* Container for the entire timeline */
 .timeline-container {
