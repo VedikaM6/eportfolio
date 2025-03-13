@@ -34,7 +34,7 @@ body {
 /* Index page css styles */
 .about-section {
   padding: 100px 20px;
-  background: #f8f9fa;
+  background: white;
 }
 
 .container {
@@ -48,6 +48,65 @@ body {
   align-items: flex-start;
 }
 
+/* Vertical line */
+.container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 75%;
+  width: 2px;
+  background: #ddd;
+}
+
+.about-left {
+  padding-right: 40px;
+}
+
+.about-right {
+  padding-left: 40px;
+  position: relative;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 5px solid black;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.contact-info a.btn {
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.skills-tools h4 {
+  color: #007bff;
+  margin-top: 40px;
+}
+
+.skill-group h5 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.skill-badge {
+  background: #f8f9fa;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: 0.9rem;
+}
 
 /* Experience page timeline css style */
 /* Container for the entire timeline */
