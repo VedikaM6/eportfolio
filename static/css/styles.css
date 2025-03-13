@@ -32,92 +32,81 @@ body {
 }
 
 /* Index page css styles */
-.about-section {
-  padding: 100px 20px;
+.home-section {
+  padding: 20px;
   background: white;
 }
 
 .container {
   max-width: 1200px;
   margin: auto;
-  position: relative;
 }
 
-.row {
+.home-row {
   display: flex;
-  align-items: flex-start;
-}
-
-/* Vertical line */
-.container::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 2px;
-  background: #ddd;
-}
-
-@media (max-width: 992px) {
-  .container::before {
-    display: none;
-    /* Hide vertical line on smaller screens */
-  }
-}
-
-.about-left {
-  padding-right: 40px;
-}
-
-.about-right {
-  padding-left: 40px;
-  position: relative;
+  align-items: center;
 }
 
 .profile-image {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
-  border: 5px solid black;
+  border: 5px solid white;
   margin-bottom: 20px;
+}
+
+.display-4 {
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.lead {
+  font-size: 1.2rem;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.skills-tools h4 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.skill-badge {
+  background: #d7dee5;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+.contact-info .btn {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  font-size: 1rem;
 }
 
 .contact-info p {
   font-size: 1rem;
   color: #666;
-}
-
-.contact-info a.btn {
-  font-size: 1rem;
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.skills-tools h4 {
-  color: #007bff;
-  margin-top: 40px;
-}
-
-.skill-group h5 {
-  margin-bottom: 10px;
+  margin: 5px 0;
 }
 
 @media (max-width: 992px) {
-
-  .about-left,
-  .about-right {
-    padding: 0;
+  .row {
+    flex-direction: column;
     text-align: center;
   }
 
-  .about-left {
-    margin-bottom: 40px;
+  .profile-image {
+    margin: 0 auto 20px;
   }
 
-  .container::before {
-    display: none;
+  .contact-info .btn {
+    margin-bottom: 10px;
   }
 }
 
@@ -271,9 +260,9 @@ body {
 }
 
 .tech-stack span {
-  background: #f8f9fa;
+  background: #d7dee5;
   padding: 5px 10px;
-  border-radius: 15px;
+  border-radius: 5px;
   margin-right: 5px;
   font-size: 0.9em;
 }

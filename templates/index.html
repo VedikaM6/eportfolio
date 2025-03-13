@@ -1,111 +1,57 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="about-section">
+<div class="home-section">
     <div class="container">
-        <div class="row">
-            <!-- Left Column: About Me + Skills & Tools -->
-            <div class="col-lg-8 about-left">
-                <h2>About Me</h2>
-                <p>
-                    about me info....
-                </p>
-
-                <div class="skills-tools">
-                  <h4>Tools & Skills</h4>
-              
-                  <!-- Programming Languages -->
-                  <div class="skill-group">
-                      <h5>Programming Languages</h5>
-                      <div class="tech-stack">
-                        <span>Go</span>
-                        <span>Python</span>
-                        <span>C</span>
-                        <span>Java</span>
-                        <span>JavaScript</span>
-                        <span>HTML/CSS</span>
-                        <span>SQL</span>
-                        <span>Bash</span>
-                        <span>PowerShell</span>
-                      </div>
-                  </div>
-              
-                  <!-- Frameworks & Libraries -->
-                  <div class="skill-group">
-                      <h5>Frameworks & Libraries</h5>
-                      <div class="tech-stack">
-                        <span>Vue.js</span>
-                        <span>Scapy</span>
-                        <span>Flask</span>
-                      </div>
-                  </div>
-              
-                  <!-- Databases -->
-                  <div class="skill-group">
-                      <h5>Databases</h5>
-                      <div class="tech-stack">
-                        <span>MongoDB</span>
-                        <span>SQL</span>
-                      </div>
-                  </div>
-              
-                  <!-- DevOps & Infrastructure Tools -->
-                  <div class="skill-group">
-                      <h5>DevOps & Infrastructure Tools</h5>
-                      <div class="tech-stack">
-                        <span>Docker</span>
-                        <span>Kubernetes</span>
-                        <span>Jenkins</span>
-                        <span>Git</span>
-                      </div>
-                  </div>
-              
-                  <!-- Networking & Security Tools -->
-                  <div class="skill-group">
-                      <h5>Networking & Security Tools</h5>
-                      <div class="tech-stack">
-                        <span>Wireshark</span>
-                        <span>Nmap</span>
-                      </div>
-                  </div>
-              
-                  <!-- Collaboration & Project Management -->
-                  <div class="skill-group">
-                      <h5>Collaboration & Project Management</h5>
-                      <div class="tech-stack">
-                        <span>Jira</span>
-                        <span>Confluence</span>
-                        <span>Sprint Planning</span>
-                        <span>Office 365</span>
-                      </div>
-                    </div>
-              
-                  <!-- Core Competencies -->
-                  <div class="skill-group">
-                      <h5>Core Competencies</h5>
-                      <div class="tech-stack">
-                        <span>OOP</span>
-                        <span>SDLC</span>
-                        <span>Network Configuration</span>
-                        <span>Adaptability</span>
-                    </div>
-                  </div>
-              </div>
-            </div>
-
-            <!-- Right Column: Profile Image + Social Links -->
-            <div class="col-md-8 col-lg-4 about-right text-center">
+        <div class="home-row align-items-center">
+            <!-- Left Column: Profile Image -->
+            <div class="col-lg-4 text-center">
                 <img src="{{ url_for('static', filename='images/profile.jpg') }}" 
                      alt="Profile Picture" 
                      class="profile-image rounded-circle shadow">
+            </div>
 
-                <div class="social-links mt-4">
-                    <a href="https://www.linkedin.com/in/vedikam/" target="_blank" class="btn btn-primary btn-block">
+            <!-- Right Column: Content -->
+            <div class="col-lg-8">
+                <h1 class="display-4">Hi, I’m Vedika Maheshwari</h1>
+                <p class="lead">
+                  I’m a passionate developer with expertise in building scalable web applications, automating workflows, 
+                  and solving complex problems through code. I have a strong interest in cybersecurity, where I focus on 
+                  securing systems, analyzing vulnerabilities, and implementing robust defenses to protect against modern threats.
+                </p>
+
+                <!-- Skills & Tools -->
+                <h4>Skills & Tools</h4>
+                <div class="skills-tools">
+                    <div class="skill-badge">Go</div>
+                    <div class="skill-badge">Python</div>
+                    <div class="skill-badge">C</div>
+                    <div class="skill-badge">JavaScript</div>
+                    <div class="skill-badge">Docker</div>
+                    <div class="skill-badge">Kubernetes</div>
+                    <div class="skill-badge">MongoDB</div>
+                    <div class="skill-badge">Git</div>
+                    <div class="skill-badge">Jira</div>
+                </div>
+
+                <div class="skill-group">
+                  <h5>Cybersecurity Focus</h5>
+                  <div class="skill-badge">Wireshark</div>
+                  <div class="skill-badge">Nmap</div>
+                  <div class="skill-badge">Penetration Testing</div>
+                  <div class="skill-badge">Vulnerability Analysis</div>
+              </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info mt-4">
+                  <h4>Contact Me</h4>
+                    <a href="https://www.linkedin.com/in/vedikam/" target="_blank" class="btn btn-primary mr-2">
                         <i class="fab fa-linkedin"></i> LinkedIn
                     </a>
-                    <a href="https://github.com/VedikaM6" target="_blank" class="btn btn-dark btn-block mt-2">
+                    <a href="https://github.com/VedikaM6" target="_blank" class="btn btn-dark mr-2">
                         <i class="fab fa-github"></i> GitHub
                     </a>
+                    <p><i class="fas fa-envelope"></i> vmah860@gmail.com</p>
                 </div>
             </div>
         </div>
