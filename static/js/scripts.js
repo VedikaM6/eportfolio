@@ -10,6 +10,7 @@ function openModal(videoId) {
   // Show the modal
   modal.style.display = 'block';
 }
+// testing comment
 
 // Close the modal
 function closeModal() {
