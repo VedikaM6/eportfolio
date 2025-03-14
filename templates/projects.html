@@ -34,11 +34,15 @@
         <!-- Project 2 -->
         <div class="col-md-6 project-item">
             <div class="card">
-                <!-- Video -->
-                <video id="video1" muted loop playsinline class="card-video" onclick="openModal('video1')">
-                  <source src="{{ url_for('static', filename='videos/phishingSimulationDemo.mp4') }}" type="video/mp4">
-                  Your browser does not support the video tag.
-              </video>
+                <!-- Embedded Video -->
+                <div class="video-container">
+                  <iframe 
+                      src="https://youtu.be/TWlnKKouER0" 
+                      frameborder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen>
+                  </iframe>
+              </div>
                 <div class="card-body">
                     <h5 class="card-title">Simulated Phishing Attacks</h5>
                     <p class="card-text">
