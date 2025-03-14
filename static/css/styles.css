@@ -201,7 +201,6 @@ body {
 }
 
 /* Project page css style */
-
 .project-grid {
   max-width: 1200px;
   margin: 40px auto;
@@ -223,9 +222,8 @@ body {
   border: none;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+  overflow: hidden;
   height: 100%;
-  /* Ensures cards are uniform in height */
 }
 
 .card:hover {
@@ -234,7 +232,6 @@ body {
 
 .card-img-top {
   height: 300px;
-  /* Increased height for better visuals */
   object-fit: cover;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -250,9 +247,7 @@ body {
   color: #666;
   margin-bottom: 20px;
   line-height: 1.6;
-  /* Improves readability */
   min-height: 120px;
-  /* Ensures consistent spacing for descriptions */
 }
 
 .tech-stack {
@@ -274,4 +269,70 @@ body {
 
 .project-links .btn:last-child {
   margin-right: 0;
+}
+
+/* Project Page's Video Css Style */
+.card-video {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  /* Indicates the video is clickable */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.card-video:hover {
+  transform: scale(1.05);
+  /* Slight zoom effect on hover */
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
+}
+
+.modal-content {
+  position: relative;
+  margin: 5% auto;
+  /* Center the modal vertically and horizontally */
+  max-width: 800px;
+  /* Adjust the width as needed */
+  max-height: 600px;
+  /* Adjust the height as needed */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #fff;
+}
+
+#expandedVideo {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  /* Limit the height of the video inside the modal */
+  border-radius: 10px;
 }

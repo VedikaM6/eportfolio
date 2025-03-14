@@ -34,9 +34,11 @@
         <!-- Project 2 -->
         <div class="col-md-6 project-item">
             <div class="card">
-                <img src="{{ url_for('static', filename='images/project1.jpg') }}" 
-                     class="card-img-top" 
-                     alt="Project 1">
+                <!-- Video -->
+                <video id="video1" muted loop playsinline class="card-video" onclick="openModal('video1')">
+                  <source src="{{ url_for('static', filename='videos/phishingSimulationDemo.mp4') }}" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
                 <div class="card-body">
                     <h5 class="card-title">Simulated Phishing Attacks</h5>
                     <p class="card-text">
@@ -85,7 +87,7 @@
       <!-- Project 4 -->
       <div class="col-md-6 project-item">
         <div class="card">
-            <img src="{{ url_for('static', filename='images/project1.jpg') }}" 
+            <img src="{{ url_for('static', filename='images/soilMoistureSensor.jpg') }}" 
                  class="card-img-top" 
                  alt="Project 1">
             <div class="card-body">
@@ -106,5 +108,16 @@
         
       </div>
     </div>
+
+    <!-- Modal for Expanded Video -->
+    <div id="videoModal" class="modal" onclick="closeModal()">
+      <div class="modal-content" onclick="event.stopPropagation()">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <video id="expandedVideo" controls width="100%">
+              <source src="" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+      </div>
+  </div>
 </div>
 {% endblock %}
