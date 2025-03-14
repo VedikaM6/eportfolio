@@ -1,13 +1,11 @@
 // Open the modal and set the video source
 function openModal(videoId) {
-  const thumbnailVideo = document.getElementById(videoId);
-  const modalVideo = document.getElementById('expandedVideo');
   const modal = document.getElementById('videoModal');
+  const expandedVideo = document.getElementById('expandedVideo');
+  const thumbnailVideo = document.getElementById('thumbnailVideo');
 
   // Set the modal video source to match the clicked thumbnail
-  modalVideo.src = thumbnailVideo.querySelector('source').src;
-  modalVideo.load(); // Reload the video
-  modalVideo.play(); // Start playing the video
+  expandedVideo.src = thumbnailVideo.src;
 
   // Show the modal
   modal.style.display = 'block';
@@ -15,12 +13,11 @@ function openModal(videoId) {
 
 // Close the modal
 function closeModal() {
-  const modalVideo = document.getElementById('expandedVideo');
   const modal = document.getElementById('videoModal');
+  const expandedVideo = document.getElementById('expandedVideo');
 
-  // Pause and reset the video
-  modalVideo.pause();
-  modalVideo.currentTime = 0;
+  // Pause the video in the modal
+  expandedVideo.src = ''; // Reset the video source
 
   // Hide the modal
   modal.style.display = 'none';

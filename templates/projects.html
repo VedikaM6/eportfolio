@@ -35,14 +35,16 @@
         <div class="col-md-6 project-item">
             <div class="card">
                 <!-- Embedded Video -->
-                <div class="video-container">
-                  <iframe 
-                      src="https://youtu.be/TWlnKKouER0" 
-                      frameborder="0" 
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                      allowfullscreen>
-                  </iframe>
-              </div>
+                <div class="video-container" onclick="openModal('vimeoVideo')">
+                <iframe 
+                  id="thumbnailVideo"
+                  src="https://player.vimeo.com/video/1065734490?h=5f8ec6c396" 
+                  frameborder="0" 
+                  allow="autoplay; fullscreen" 
+                  allowfullscreen>
+                </iframe>
+
+                </div>
                 <div class="card-body">
                     <h5 class="card-title">Simulated Phishing Attacks</h5>
                     <p class="card-text">
@@ -117,10 +119,13 @@
     <div id="videoModal" class="modal" onclick="closeModal()">
       <div class="modal-content" onclick="event.stopPropagation()">
           <span class="close" onclick="closeModal()">&times;</span>
-          <video id="expandedVideo" controls width="100%">
-              <source src="" type="video/mp4">
-              Your browser does not support the video tag.
-          </video>
+          <iframe 
+            id="expandedVideo"
+            src="" 
+            frameborder="0" 
+            allow="autoplay; fullscreen" 
+            allowfullscreen>
+          </iframe>
       </div>
   </div>
 </div>
