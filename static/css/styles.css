@@ -72,7 +72,7 @@ body {
 }
 
 .skill-badge {
-  background: #d7dee5;
+  background: #A6D0FF;
   color: #333;
   padding: 5px 10px;
   border-radius: 5px;
@@ -80,6 +80,12 @@ body {
   margin-bottom: 10px;
   display: inline-block;
   font-size: 0.9rem;
+}
+
+/* Hover Effect */
+.skill-badge div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-info .btn {
@@ -257,7 +263,7 @@ body {
 }
 
 .tech-stack span {
-  background: #d7dee5;
+  background: #A6D0FF;
   padding: 5px 10px;
   border-radius: 5px;
   margin-right: 5px;
